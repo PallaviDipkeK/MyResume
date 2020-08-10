@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vikesh}{Prasad}{ 
+\href{mailto:vikesh8085@gmail.com}{vikesh8085@gmail.com} | +91-8054723088
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Kurukshetra University}
+\descript{Btech in Electrical}
+\location{June 2013}
+\sectionsep
+
+\subsection{KENDRIYA VIDYALAYA}
+\descript{10+2}
+\location{March 2009}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Vikesh8085}{\bf vikesh8085} \\
+LinkedIn://  \href{https://www.linkedin.com/in/vikeshprasad/}{\bf vikeshprasad} \\
+Hackerrank://  \href{https://www.hackerrank.com/vikesh_prasad?hr_r=1/}{\bf vikeshrasad} \\
+StackOverflow://  \href{https://stackoverflow.com/users/5059864/vikesh-prasad}{\bf vikesh-prasad} \\
+Twitter://  \href{https://twitter.com/vikesh8085}{\bf @vikesh8085} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOOLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tools}
+\subsection{Development}
+XCode \\
+Cocoapods \\
+Instruments \\
+Git \\
+Postman \\
+\sectionsep
+
+\subsection{Deployment}
+Testflight \\
+Firebase\\
+Fastlane\\
+
+\location{Familiar with:}
+CircleCI\\
+Jenkins\\
+Travis-CI
+\sectionsep
+
+\subsection{Performance}
+Zombie \\
+Time Profiling \\
+Allocation \\
+Memory Leaks \\
+App Launch \\
+\sectionsep
+
+\subsection{Management}
+JIRA \\
+BitBucket\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LANGUAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Language}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Swift \textbullet{}   Objective C 
+
+\location{Familiar with:}
+SwiftUI \textbullet{} React Native \textbullet{} OpenGL \textbullet{} Shader Language \textbullet{} Embedded C
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Mobiotics}
+\descript{ iOS Developer | TVOS Developer }
+\location{July 2018 - Present | Bengaluru, KA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on In-House Product Based on Online Video Streaming.
+\item Maintenance and Revamped on  \textbf{ALTBalaji iOS and TVOS} App.
+\item Optimzed app launch time for ALTBalaji upto 400 percent and Refactor Home Page.
+\item Worked on DRM Content via Widevine and Fairplay for Streaming and Downloading.
+\item Worked on \textbf{EPICTV TVOS} App app from scratch to production.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{iApp Technologies}
+\descript{| iOS Engineer }
+\location{June 2015 – June 2018 | Chandigarh}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on Media Editing based Products using OpenGL.
+\item Resolved Crashlytics crashes, monitor stability and Fixed memory issues. 
+\item Created Custom CIFilter for Video and Image
+\item Worked on iMessage and Keyboard Extension
+\item Exception Handling (Restoring App State) if app crashed in between or user apps kills accidently
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECHNICALS SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS}
+\descript{CODE QUALITY}
+SOLID Principal TDD  SwiftLint\\
+
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+\descript{DESIGN ARCHITECTURE}
+% \location{Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+MVC MVVM Singleton Facade Observer Delegate Coordinator 
+\sectionsep
+
+
+\descript{MUTLITHREADING}
+GCD OperationQueue NSOperation
+\sectionsep
+
+\descript{Technology}
+  \textbullet{} In App purchage  \textbullet{} Deeplinks 
+\textbullet{} Build Configuration \textbullet{} DRM Contents 
+\textbullet{} Custom Player \textbullet{} REST API \textbullet{} Social Login \textbullet{} TVOS \textbullet{} Exception Handling (Restoring App State) \textbullet{} Various Analytics(AWS, Appsflyer, google, Firebase, Branch, WebEngage) \textbullet{} APNS \textbullet{} Animation on Video for exporting and playing using AVSynchronizedLayer \textbullet{} CoreData \textbullet{} Custom Filter using shader \textbullet{}  Memory Management  \textbullet{} Reducing Compilation Time \textbullet{} Thread Sanitizer
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2012	     & Winner  &  NITRO, Robotics Race, NIT, Jalandhar\\
+2011	     & Winner  &  LandRover, Robo Task+Race, Thapar University\\
+2012	     & Winner  & Robosoccer, NSIT, Delhi \\
+2011     & Runner up & Mud Rally, UIET, Chandigarh  \\
+2011     & By ALT Team & Deliver app before time with cash prize  \\
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Organising
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Others}
+"Organise Competitive Coding for iOS Team in iAPP Technologies, Chandigarh" \\
+"Organise Robotics Competition for My College in 2012,2013" \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
